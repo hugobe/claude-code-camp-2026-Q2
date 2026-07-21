@@ -5,3 +5,7 @@
 .env
 .env.local
 week0_explore/preview/data/world/
+
+# SQLite WAL-mode runtime files (regenerated automatically, no stable content)
+*.db-shm
+*.db-wal

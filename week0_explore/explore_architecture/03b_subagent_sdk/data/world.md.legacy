@@ -1,0 +1,122 @@
+# World Memory — Midgaard (tbaMUD, localhost:4000)
+
+## Map
+
+### Temple district (north)
+- **By The Temple Altar** (start room) — exits: n, s; statue of Odin.
+- **The Temple Of Midgaard** (south end of temple hall) — exits: n, e, s, w, d; Reading Room (w), donation room (e), ATM here.
+- **The Temple Square** — exits: n, e, s, w; Clerics' Guild entrance (w), Grunting Boar Inn (e), fountain, mobs (gelatinous blob).
+  - **Entrance To The Clerics' Guild** (w of Temple Square) — exits: n, e; bar entrance to north is guarded (blocked by a knight templar), ATM here.
+
+### Market / Main Street core
+- **Market Square** — exits: n (Temple Square), e (Main Street), s (Common Square), w (Main Street). Central hub.
+- **Main Street (west of Market Square)** — exits n/e/s/w; Armory (s), **the Bakery (n)**.
+  - **The Armory** (s) — sells/buys armor only (won't buy meat). Note on wall explains buy/sell/value/list commands (standard shop commands).
+  - **The Bakery** (n) — see Shops below.
+- **Main Street (further west, end of street)** — exits n/e/s/w; Guild of Magic Users (s), magic shop (n), city gate (w).
+  - **Inside The West Gate Of Midgaard** — exits e/s/w; Wall Road (s).
+- **Main Street (east of Market Square)** — exits n/e/s/w; general store (n), Pet Shop (s).
+  - **The General Store** (n) — sells cashcard/box/bag/lantern/torch; doesn't buy meat.
+  - **The Pet Shop** (s) — buy/order pets; has a sign with instructions.
+- **Main Street (further east)** — exits n/e/s/w; Weapon Shop (n), Guild of Swordsmen (s), leaves town to the east.
+  - **The Weapon Shop** (n) — buys/sells weapons. Sold starting small sword here for 23g.
+  - **Inside The East Gate Of Midgaard** — exits e/s/w; Water Shop (s).
+    - **Ye Olde Water Shoppe** (s) — see Shops below.
+  - **Outside The East Gate Of Midgaard** — exits e/w.
+    - **The City Entrance** (further e) — flagged "above your recommended level," leads into forest/plains. Avoid at low level.
+
+### Common Square / poor district (south)
+- **Common Square** (s of Market Square) — exits n/e/s/w; poor alley (w), dark alley (e), a "nasty smell" to the south (leads to the Dump).
+- **The Eastern End Of Poor Alley** — exits e/s/w; Grubby Inn (s), continues to Poor Alley (w), Common Square (e).
+  - **Grubby Inn** (s) — a run-down bar; "Filthy" serves drinks; a beggar hangs around.
+  - **Poor Alley** (further w) — exits e/w; writing on the wall ("Who watches the watchmen?"); continues to Wall Road area (w).
+- **The Dump** (s of Common Square) — exits n, d; entrance to the sewer system below.
+  - **The Quadruple Junction Under The Dump** — exits n/e/s/w/u; sewer hub.
+    - **The Triple Junction** (n) — exits e/s/w.
+      - **The Sewer Pipe Bend** (e) — exits n/w.
+        - **A Bend In The Sewer Pipe** (n) — exits s/w. (loops back around, no items/mobs found yet)
+- **The Dark Alley** (e of Common Square) — exits e/s/w; Guild of Thieves (s), continues e to the levee.
+  - **Entrance Hall To The Guild Of Thieves** (s) — exits n/e; bar to the east is guarded (Peacekeeper blocks entry), ATM here.
+  - **The Dark Alley At The Levee** (e) — exits e/s/w.
+    - **The Levee** (s) — exits n/s; retired captain sells boats; river to the south requires a boat.
+
+## Shops
+
+- **The Bakery** (Main Street, north off the west Main-Street junction):
+  1. A danish pastry — 7g (unlimited)
+  2. A bread — 14g (unlimited)
+  3. A waybread — 72g (unlimited)
+
+- **Ye Olde Water Shoppe** (south of Inside The East Gate):
+  1. A canteen of clear water — 55g (unlimited)
+  2. A bottle of clear water — 12g (unlimited)
+  3. A cup of clear water — 2g (unlimited)
+
+- **The General Store** (north off east Main-Street junction):
+  1. A cashcard — 1542g
+  2. A box — 77g
+  3. A bag — 30g
+  4. A lantern — 77g
+  5. A torch — 15g
+  - Grocer refuses to buy meat ("I don't buy THAT... Try another shop.")
+
+- **The Armory** (south off west Main-Street junction) — buys/sells armor only; refuses meat.
+
+- **The Weapon Shop** (north off far-east Main Street) — buys/sells weapons. Bought a small sword off me for 23g.
+
+- **The Pet Shop** (south off east Main-Street junction) — sells pets via `buy <pet> [name]`, control with `order <pet> <instructions>`.
+
+## NPCs & Monsters
+
+- **Beastly fido** (garbage-scrounging dog-like mob) — found in multiple Main Street/Common Square rooms. Low difficulty solo, ~33 exp and ~10 gold + a piece of meat per kill. CAUTION: fighting one near a town square can pull a **Peacekeeper** guard NPC into the fight, who hits hard (~8 HP per hit) — better to fight fidos away from patrolled squares, or be ready to `flee`.
+- **Odif yltsaeb** ("beastly fido" spelled backwards) — same mob as beastly fido, found in the Dark Alley. Same rewards (~34 exp, 10 gold, meat).
+- **Peacekeeper** — town guard NPC that assists mobs being attacked near guarded areas (Main Street near east gate, guild entrances). Also blocks entry into guarded guild back-rooms (Thieves' Guild bar, Clerics' Guild bar).
+- **Cityguard** — stationed at gates and squares; hasn't attacked, seems passive unless provoked.
+- **Gelatinous blob** (oozing green) — seen at the Temple Square fountain, not yet fought.
+- **Beggar** — seen in Poor Alley and the Grubby Inn, asking for coins; not yet interacted with.
+
+## Newbie Zone (discovered!)
+**Location:** Entrance is east off The Great Field of Midgaard (north of temple)
+- **Entrance To The Newbie Zone** — exits: n (to passage), w (to Great Field)
+- **The Beginning Of The Passage** — exits: e (Dirty Hallway), s (exit)
+  - Pet dragon (loose)
+- **The Dirty Hallway** — exits: e (Nexus), (s) closed door, w (Beginning)
+  - Newbie monster, creepy crawler
+- **A Nexus** — exits: (n) closed, (e) closed, s (More Of Hallway), w (Dirty Hallway)
+  - Newbie monster, creepy crawler
+- **More Of The Hallway** — exits: n (Nexus), s (Another Corner), (w) closed
+  - Newbie monster, creepy crawler
+- **Another Corner** — exits: n (More), s (Brighter Hallway), (e) closed, w (Brighter)
+  - Newbie monster
+- **A Brighter Hallway** — exits: e (Another Corner), w (End Of Passage)
+  - Newbie monster
+- **The End Of The Passage** — exits: e (Brighter), w (Open Field)
+- **An Open Field By The Great Field** — exits: n (Great Field loop), e (passage)
+  - Dead end back to starting field
+
+Closed doors: (s), (n), (e), (w) marked in various rooms — likely locked or puzzle doors.
+**THE GREAT MINOTAUR - DEFEATED!** ✅
+- **Location:** Deep in the dungeons below the Newbie Zone
+  - Path: Entrance → open (s) door → north → Nexus, open (n) door → Bright Hallway → Statue's Room → East through Hallway → North Stairs → South Stairs → Narrow Passage (open (s) door) → Alchemist's Room (down stairs) → Entrance → south → Branch → **MINOTAUR ROOM**
+- Reward: 2,668 exp on defeat + level up
+- **Defeated by character at level 1** (leveled to 2, then 3 during the quest)
+
+## Guild of Swordsmen (accessible!)
+- **Entrance Hall** — Knight guarding, Peacekeeper present, ATM
+- **Bar of Swordsmen** — Waiter present, bulletin board, connects to practice yard
+- **Tournament And Practice Yard** — Guildmaster sharpening axe, well leads down to sewers
+- **The Sewers** — Connected to Guild of Swordsmen via well
+  - Junction with multiple passages
+  - Dark Passageway (branches to watery sewer)
+  - **Watery Sewer Bend** — GOOD HUNTING GROUND!
+    - Huge Hungry-looking Sewer Rat (1,046 exp, dropped loot)
+    - Small Spider (33 exp, dropped loot)
+    - More creatures likely here for farming
+
+## Unexplored / Leads
+- Guild of Magic Users, Guild of Thieves (bar), Clerics' Guild (bar) — still guarded/unentered
+- The Levee — need to buy a boat from the retired captain to go further south on the river.
+- Sewer system west branches from The Dark Passageway and Junction
+- The Great Chessboard (past rusty gate west of Great Field) — flagged "above recommended level"
+- East of the East Gate (The City Entrance and beyond) — too high level for now; revisit once stronger.
+- Reading Room and donation room (off the Temple hall) — not yet visited.
