@@ -9,3 +9,5 @@ week0_explore/preview/data/world/
 # SQLite WAL-mode runtime files (regenerated automatically, no stable content)
 *.db-shm
 *.db-wal
+week1_baseline/python/00_config/boukensha/__pycache__/
+week1_baseline/python/00_config/boukensha/tasks/__pycache__/
