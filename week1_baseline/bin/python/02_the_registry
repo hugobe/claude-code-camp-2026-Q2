@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")/../../python/02_the_registry"
+
+if command -v uv >/dev/null 2>&1 && PYTHON_BIN="$(uv python find 3.14 2>/dev/null)"; then
+  :
+else
+  PYTHON_BIN="$(command -v python3)"
+fi
+
+if [ ! -d .venv ]; then
+  "$PYTHON_BIN" -m venv .venv
+fi
+
+source .venv/bin/activate
+pip install -q -r requirements.txt
+python examples/example.py
