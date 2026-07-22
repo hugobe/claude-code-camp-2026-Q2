@@ -47,6 +47,8 @@ when "openai"
   Boukensha::Backends::OpenAI.new(api_key: ENV.fetch("OPENAI_API_KEY"), model: model)
 when "gemini"
   Boukensha::Backends::Gemini.new(api_key: ENV.fetch("GEMINI_API_KEY"), model: model)
+when "lm_studio"
+  Boukensha::Backends::LmStudio.new(model: model)
 else
   raise ArgumentError, "Unsupported provider for player task: #{provider}"
 end
