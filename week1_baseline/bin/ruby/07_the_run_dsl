@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../../.." && pwd)"
+
+export BOUKENSHA_DIR="$REPO_ROOT/.boukensha"
 
 cd "$(dirname "$0")/../../ruby/07_the_run_dsl"
 bundle exec ruby examples/example.rb
