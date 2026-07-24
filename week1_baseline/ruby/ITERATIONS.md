@@ -1,3 +1,6 @@
+# Link to the diagram from each iteraton
+https://lucid.app/lucidchart/e320f56a-7513-47d5-acf9-1e7fc7a6ce6e/edit?viewport_loc=-1369%2C-173%2C3729%2C2027%2C0_0&invitationId=inv_3da699b4-7673-489f-b1fd-1172c366a522
+
 # What is goal for Week1?
 
 We want to build a baseline agent that has all the common components for building any kind of agent. Things it should include:

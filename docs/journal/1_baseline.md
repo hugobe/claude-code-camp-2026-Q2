@@ -1,7 +1,7 @@
 # Preweek Technical Documentation
 
 ## Technical Goal
-- Understand the different components, an agent consists of
+- Understand the different components an agent consists of
 -
 
 ## Technical Uncertainty
